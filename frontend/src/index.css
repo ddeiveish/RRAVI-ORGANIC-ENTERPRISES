@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+@layer base {
+    :root {
+        --background: 40 33% 96%;
+        --foreground: 156 19% 9%;
+        --card: 40 33% 98%;
+        --card-foreground: 156 19% 9%;
+        --popover: 40 33% 98%;
+        --popover-foreground: 156 19% 9%;
+        --primary: 24 70% 50%;
+        --primary-foreground: 40 33% 96%;
+        --secondary: 38 30% 89%;
+        --secondary-foreground: 156 19% 9%;
+        --muted: 38 20% 90%;
+        --muted-foreground: 150 10% 39%;
+        --accent: 154 51% 9%;
+        --accent-foreground: 40 33% 96%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 40 33% 96%;
+        --border: 40 15% 86%;
+        --input: 40 15% 80%;
+        --ring: 24 70% 50%;
+        --chart-1: 24 70% 50%;
+        --chart-2: 154 51% 9%;
+        --chart-3: 35 84% 63%;
+        --chart-4: 150 10% 39%;
+        --chart-5: 38 30% 89%;
+        --radius: 0.75rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-cream text-ink font-sans antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    ::selection {
+        background: #d96b27;
+        color: #f9f6f0;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #ece6d8;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #0b2219;
+        border-radius: 8px;
+        border: 2px solid #ece6d8;
+    }
+}
+
+.grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.07;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+.glass-dark {
+    background: rgba(11, 34, 25, 0.82);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    backdrop-filter: blur(18px) saturate(150%);
+}
+
+.glass-light {
+    background: rgba(249, 246, 240, 0.86);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    backdrop-filter: blur(18px) saturate(140%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}

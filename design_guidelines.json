@@ -1,0 +1,200 @@
+{
+  "project_info": {
+    "name": "RRAVI ORGANIC ENTERPRISES",
+    "description": "Award-worthy (Awwwards Site-of-the-Day level) multi-page agro/herbal export website combining Apple-like editorial precision with rich botanical warmth.",
+    "tech_stack": [
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Lenis Smooth Scroll",
+      "Lucide React Icons",
+      "Sonner Toasts"
+    ],
+    "file_extension_note": "The codebase uses .js and .jsx files (not .tsx)."
+  },
+  "design_archetype": {
+    "name": "Botanical Apple-Minimalism & Organic Precision",
+    "vibe": "High-end luxury editorial meets scientific export reliability. Atmospheric deep forest green surfaces, warm sand backgrounds, crisp typography, and vibrant terracotta/amber highlights.",
+    "principles": [
+      "Fusion over Imitation: Mix Swiss typography layout with botanical warmth and tactile photography.",
+      "Emotion First: Evoke trust, purity, scientific rigor, and natural origin.",
+      "Content is King: Line-by-line masked hero reveal, numbered manifesto chapters, and dedicated category storytelling.",
+      "Generous Spacing: 2-3x padding to avoid cramped AI template aesthetics.",
+      "Tactile Contrast: Dark forest surfaces, glassmorphism overlays, and rich natural photos."
+    ]
+  },
+  "color_palette": {
+    "primary_dark": "#0B2219",
+    "primary_dark_surface": "#06150F",
+    "primary_light_bg": "#F9F6F0",
+    "surface_sand": "#ECE6D8",
+    "terracotta_accent": "#D96B27",
+    "amber_glow": "#F49E4C",
+    "text_dark": "#121A16",
+    "text_muted": "#5A6E64",
+    "text_light": "#F9F6F0",
+    "text_light_muted": "#A3B8AD",
+    "border_dark": "rgba(249, 246, 240, 0.12)",
+    "border_light": "rgba(11, 34, 25, 0.1)",
+    "glass_dark": "rgba(11, 34, 25, 0.82)",
+    "glass_light": "rgba(249, 246, 240, 0.85)"
+  },
+  "typography": {
+    "headFont": "Playfair Display, serif or Outfit, sans-serif",
+    "bodyFont": "Inter, sans-serif",
+    "monoFont": "JetBrains Mono, monospace",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight",
+      "h3": "text-xl sm:text-2xl font-medium tracking-normal",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed text-slate-700 dark:text-slate-300",
+      "eyebrow": "text-xs uppercase tracking-[0.25em] font-mono text-[#D96B27]"
+    }
+  },
+  "image_urls": {
+    "categories": {
+      "Herbal Extracts": "https://images.pexels.com/photos/17380335/pexels-photo-17380335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "Premium Herbal Powders": "https://images.unsplash.com/photo-1615485500834-bc10199bc727?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxoZXJiYWwlMjBleHRyYWN0cyUyMG9yZ2FuaWMlMjBwb3dkZXIlMjBzcGljZXMlMjB0dXJtZXJpYyUyMG1vcmluZ2F8ZW58MHx8fHwxNzg5OTA5Mjg4fDA&ixlib=rb-4.1.0&q=85",
+      "Therapeutic Herbal Oils": "https://images.pexels.com/photos/6694188/pexels-photo-6694188.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "Dehydrated Fruit Powders & Extracts": "https://images.pexels.com/photos/17820711/pexels-photo-17820711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "Functional Vegetable & Root Powders": "https://images.unsplash.com/photo-1606914469633-bd39206ea739?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwzfHxoZXJiYWwlMjBleHRyYWN0cyUyMG9yZ2FuaWMlMjBwb3dkZXIlMjBzcGljZXMlMjB0dXJtZXJpYyUyMG1vcmluZ2F8ZW58MHx8fHwxNzg5OTA5Mjg4fDA&ixlib=rb-4.1.0&q=85",
+      "Seeds Flowers & Carom Derivatives": "https://images.pexels.com/photos/7526031/pexels-photo-7526031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "Authentic Bark Powders": "https://images.unsplash.com/photo-1702041295331-840d4d9aa7c9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwyfHxoZXJiYWwlMjBleHRyYWN0cyUyMG9yZ2FuaWMlMjBwb3dkZXIlMjBzcGljZXMlMjB0dXJtZXJpYyUyMG1vcmluZ2F8ZW58MHx8fHwxNzg5OTA5Mjg4fDA&ixlib=rb-4.1.0&q=85",
+      "Moringa Product Range": "https://images.pexels.com/photos/20527455/pexels-photo-20527455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "heroes": {
+      "organic_farm_harvest": "https://images.unsplash.com/photo-1708592190037-a1b08aacf4ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA5NzR8MHwxfHNlYXJjaHwzfHxvcmdhbmljJTIwZmFybSUyMGluZGlhJTIwaGFydmVzdCUyMGdyZWVuJTIwZmllbGQlMjBoZXJicyUyMGNhcmdvJTIwZXhwb3J0fGVufDB8fHx8MTc4OTkwOTI4OHww&ixlib=rb-4.1.0&q=85",
+      "traditional_sorting": "https://images.pexels.com/photos/20223766/pexels-photo-20223766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  },
+  "product_categories_data": [
+    {
+      "id": "herbal-extracts",
+      "name": "Herbal Extracts",
+      "tagline": "Standardized botanical bio-actives for pharmaceuticals, nutraceuticals & wellness.",
+      "imageKey": "Herbal Extracts",
+      "subProducts": [
+        {"name": "Ashwagandha Extract (Withanolides 2.5% - 10%)", "grade": "Pharma Grade / Organic", "purity": "99.2%", "packaging": "25kg HDPE Drums"},
+        {"name": "Curcumin Extract (95% Curcuminoids)", "grade": "Food & Pharma", "purity": "98.8%", "packaging": "25kg Fiber Drums"},
+        {"name": "Bacopa Monnieri Extract (Bacosides 20%-50%)", "grade": "Nutraceutical", "purity": "99.0%", "packaging": "25kg Vacuum Foil Bags"},
+        {"name": "Shatavari Extract (Saponins 20%-40%)", "grade": "Standardized Pure", "purity": "98.5%", "packaging": "20kg Cartons"}
+      ]
+    },
+    {
+      "id": "premium-herbal-powders",
+      "name": "Premium Herbal Powders",
+      "tagline": "Ultra-fine, cold-milled organic powders preserving maximum phytocompounds.",
+      "imageKey": "Premium Herbal Powders",
+      "subProducts": [
+        {"name": "Organic Turmeric Powder (High Curcumin)", "grade": "100% Organic certified", "purity": "100%", "packaging": "25kg Paper Kraft Bags"},
+        {"name": "Amla Powder (Natural Vitamin C Rich)", "grade": "Raw Superfood Grade", "purity": "99.8%", "packaging": "25kg Drums"},
+        {"name": "Neem Leaf Powder", "grade": "Cosmetic & Pharma", "purity": "99.5%", "packaging": "20kg Bags"},
+        {"name": "Tulsi (Holy Basil) Powder", "grade": "Herbal Tea & Supplement", "purity": "99.9%", "packaging": "25kg Drums"}
+      ]
+    },
+    {
+      "id": "therapeutic-herbal-oils",
+      "name": "Therapeutic Herbal Oils",
+      "tagline": "Steam-distilled and cold-pressed essential & carrier oils.",
+      "imageKey": "Therapeutic Herbal Oils",
+      "subProducts": [
+        {"name": "Cold-Pressed Black Seed (Nigella Sativa) Oil", "grade": "Virgin Cold-Pressed", "purity": "100% Pure", "packaging": "200L Steel Drums / Bottled"},
+        {"name": "Neem Seed Essential Oil", "grade": "Organic Agri & Pharma", "purity": "99.7%", "packaging": "50L HDPE Carboys"},
+        {"name": "Lemongrass Essential Oil", "grade": "Therapeutic Grade", "purity": "100%", "packaging": "25kg Aluminum Bottles"},
+        {"name": "Sesame Seed Virgin Oil", "grade": "Ayurvedic & Food", "purity": "99.9%", "packaging": "190kg Drums"}
+      ]
+    },
+    {
+      "id": "dehydrated-fruit-powders",
+      "name": "Dehydrated Fruit Powders & Extracts",
+      "tagline": "Spray-dried & freeze-dried real fruit concentrates rich in aroma & flavor.",
+      "imageKey": "Dehydrated Fruit Powders & Extracts",
+      "subProducts": [
+        {"name": "Raw Mango Powder (Amchur)", "grade": "Culinary & Industrial", "purity": "100%", "packaging": "25kg Kraft Bags"},
+        {"name": "Pomegranate Juice Powder", "grade": "Beverage & Supplement", "purity": "99.4%", "packaging": "20kg Drums"},
+        {"name": "Papaya Leaf Extract Powder", "grade": "Nutraceutical", "purity": "98.9%", "packaging": "25kg Foil Bags"}
+      ]
+    },
+    {
+      "id": "functional-root-powders",
+      "name": "Functional Vegetable & Root Powders",
+      "tagline": "Nutrient-dense root and vegetable derivatives for modern food systems.",
+      "imageKey": "Functional Vegetable & Root Powders",
+      "subProducts": [
+        {"name": "Beetroot Juice Powder", "grade": "Natural Color & Pre-Workout", "purity": "99.6%", "packaging": "25kg Drums"},
+        {"name": "Ginger Root Powder (Oleoresin rich)", "grade": "Export Grade", "purity": "99.9%", "packaging": "25kg Bags"},
+        {"name": "Garlic Powder & Extract", "grade": "Food Industry & Pharma", "purity": "99.5%", "packaging": "25kg HDPE Drums"}
+      ]
+    },
+    {
+      "id": "seeds-flowers-carom",
+      "name": "Seeds Flowers & Carom Derivatives",
+      "tagline": "Aromatic carom derivatives, dried whole flowers, and high-purity seeds.",
+      "imageKey": "Seeds Flowers & Carom Derivatives",
+      "subProducts": [
+        {"name": "Carom (Ajwain) Seeds & Oleoresin", "grade": "Spice & Medicinal", "purity": "99.2%", "packaging": "25kg Jute/PP Bags"},
+        {"name": "Hibiscus Dried Flower Powder", "grade": "Tea & Botanical Blends", "purity": "99.8%", "packaging": "20kg Cartons"},
+        {"name": "Fennel Seeds (Whole & Ground)", "grade": "Export Quality Sortex", "purity": "99.9%", "packaging": "50kg Bags"}
+      ]
+    },
+    {
+      "id": "authentic-bark-powders",
+      "name": "Authentic Bark Powders",
+      "tagline": "Sustainably harvested tree bark powders packed with active polyphenols.",
+      "imageKey": "Authentic Bark Powders",
+      "subProducts": [
+        {"name": "Cinnamon (Dalchini) Bark Powder", "grade": "High Essential Oil", "purity": "99.5%", "packaging": "25kg Drums"},
+        {"name": "Arjun Bark (Terminalia Arjuna) Powder", "grade": "Cardio-Wellness Grade", "purity": "99.1%", "packaging": "25kg Bags"},
+        {"name": "White Willow Bark Extract", "grade": "Salicin Standardized", "purity": "98.7%", "packaging": "20kg Drums"}
+      ]
+    },
+    {
+      "id": "moringa-range",
+      "name": "Moringa Product Range",
+      "tagline": "The Miracle Tree vertical: certified organic leaves, seeds, oil, and extracts.",
+      "imageKey": "Moringa Product Range",
+      "subProducts": [
+        {"name": "Organic Moringa Leaf Powder", "grade": "100% Organic Superfood", "purity": "100%", "packaging": "20kg Vacuum Bags"},
+        {"name": "Moringa Seed Oil (Ben Oil)", "grade": "Cosmetics & Skincare", "purity": "100% Cold-Pressed", "packaging": "25kg Drums"},
+        {"name": "Moringa Seeds (PKM-1 Variety)", "grade": "Germination & Extraction", "purity": "99.0%", "packaging": "25kg Bags"}
+      ]
+    }
+  ],
+  "contact_info": {
+    "founder": "Ravi Dwivedi",
+    "phones": [
+      "+91 7570055669",
+      "+91 7570016699"
+    ],
+    "email": "ravie5702@gmail.com",
+    "whatsapp": "https://wa.me/917570055669",
+    "address": "India-based Agro & Herbal Export Headquarters, Uttar Pradesh, India"
+  },
+  "navigation_structure": [
+    {"name": "Home", "path": "/"},
+    {"name": "Products", "path": "/products"},
+    {"name": "About Us", "path": "/about"},
+    {"name": "Why Us", "path": "/why-us"},
+    {"name": "Contact", "path": "/contact"}
+  ],
+  "key_interactive_components": [
+    "Glassmorphism sticky navbar with live active route indicator and quick Request Quote action",
+    "Kinetic Hero section with masked line-by-line reveal using Framer Motion",
+    "Slow editorial marquee banner with subtle drift effect",
+    "Interactive 8-Category Bento Grid with single high-impact stock photo per category and Request Quote trigger",
+    "Quote Enquiry Drawer / Modal pre-populated with chosen product category",
+    "WhatsApp instant enquiry trigger button with pre-written request message",
+    "Numbered Manifesto section (Chapters 01 to 04)",
+    "Comparison table on Why Us page (RRAVI Organic Enterprises vs Standard Export Traders)",
+    "Functional enquiry form connected to toast notifications (Sonner)"
+  ],
+  "instructions_to_main_agent": [
+    "Ensure Lenis smooth scrolling is integrated at top level App component.",
+    "Do NOT use transparent headers. Use glassmorphism: backdrop-blur-xl bg-[#0B2219]/85 border-b border-[#F9F6F0]/10.",
+    "Add data-testid attributes on ALL buttons, input fields, navbar links, quote triggers, and form submits.",
+    "Support dark and light modes cleanly or use deep organic dark forest green as the default primary theme with warm cream accents.",
+    "Inject Sonner Toaster in index.js / App.js for enquiry submit confirmations.",
+    "Keep code structured with clear modular components in src/components/ and src/pages/."
+  ]
+}
