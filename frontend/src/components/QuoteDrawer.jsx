@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/dialog";
 import EnquiryForm from "@/components/EnquiryForm";
 
-export default function QuoteDrawer({ open, category, onOpenChange }) {
+export default function QuoteDrawer({ open, category, product = "", onOpenChange }) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
@@ -20,17 +20,24 @@ export default function QuoteDrawer({ open, category, onOpenChange }) {
               Request a <em className="italic text-amber">Quote</em>
             </DialogTitle>
             <DialogDescription className="text-sm text-mist">
-              {category && category !== "General Enquiry"
-                ? `Enquiring about: ${category}`
-                : "Tell us what you need — we reply within 24 hours."}
+              {product
+                ? `Enquiring about: ${product} — ${category}`
+                : category && category !== "General Enquiry"
+                  ? `Enquiring about: ${category}`
+                  : "Tell us what you need — we reply within 24 hours."}
             </DialogDescription>
           </DialogHeader>
         </div>
         <div className="p-6 sm:p-8">
           <EnquiryForm
-            key={category || "general"}
+            key={`${category}|${product}`}
             idPrefix="quote"
             defaultCategory={category || "General Enquiry"}
+            defaultMessage={
+              product
+                ? `I'd like a quote for ${product} (${category}).\nApprox. quantity: \nDestination port: `
+                : ""
+            }
           />
         </div>
       </DialogContent>

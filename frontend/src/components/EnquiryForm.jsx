@@ -27,7 +27,7 @@ const Label = ({ htmlFor, children }) => (
   </label>
 );
 
-export default function EnquiryForm({ idPrefix = "enquiry", defaultCategory = "General Enquiry", onSuccess }) {
+export default function EnquiryForm({ idPrefix = "enquiry", defaultCategory = "General Enquiry", defaultMessage = "", onSuccess }) {
   const empty = {
     name: "",
     email: "",
@@ -35,7 +35,7 @@ export default function EnquiryForm({ idPrefix = "enquiry", defaultCategory = "G
     country: "",
     phone: "",
     category: defaultCategory || "General Enquiry",
-    message: "",
+    message: defaultMessage,
   };
   const [form, setForm] = useState(empty);
   const [sending, setSending] = useState(false);

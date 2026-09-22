@@ -13,13 +13,14 @@ import Products from "@/pages/Products";
 import About from "@/pages/About";
 import WhyUs from "@/pages/WhyUs";
 import Contact from "@/pages/Contact";
+import Admin from "@/pages/Admin";
 
 function Shell() {
   const location = useLocation();
   const { pathname } = location;
-  const [quote, setQuote] = useState({ open: false, category: "General Enquiry" });
+  const [quote, setQuote] = useState({ open: false, category: "General Enquiry", product: "" });
   const openQuote = useCallback(
-    (category = "General Enquiry") => setQuote({ open: true, category }),
+    (category = "General Enquiry", product = "") => setQuote({ open: true, category, product }),
     []
   );
 
@@ -62,6 +63,7 @@ function Shell() {
               <Route path="/about" element={<About />} />
               <Route path="/why-us" element={<WhyUs />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/admin" element={<Admin />} />
             </Routes>
           </motion.div>
         </AnimatePresence>
@@ -69,6 +71,7 @@ function Shell() {
         <QuoteDrawer
           open={quote.open}
           category={quote.category}
+          product={quote.product}
           onOpenChange={(o) => setQuote((s) => ({ ...s, open: o }))}
         />
       </div>

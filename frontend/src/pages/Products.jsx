@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Plus } from "lucide-react";
 import { Reveal, Eyebrow, EASE } from "@/components/Reveal";
 import { motion } from "framer-motion";
 import { CATEGORIES } from "@/data/catalog";
@@ -120,16 +120,24 @@ export default function Products() {
                           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.022 } } }}
                         >
                           {g.items.map((item) => (
-                            <motion.span
+                            <motion.button
+                              type="button"
                               key={item}
+                              data-testid={`chip-${c.id}-${item.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+                              onClick={() => openQuote(c.name, item)}
+                              title={`Enquire about ${item}`}
                               variants={{
                                 hidden: { opacity: 0, y: 14, scale: 0.9 },
                                 show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: EASE } },
                               }}
-                              className="chip-press rounded-full border border-forest/15 bg-white/60 px-3.5 py-1.5 text-[13px] text-ink hover:border-terra hover:text-terra"
+                              className="chip-press group/chip inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-forest/15 bg-white/60 px-3.5 py-1.5 text-[13px] text-ink hover:border-terra hover:bg-terra hover:text-cream"
                             >
                               {item}
-                            </motion.span>
+                              <Plus
+                                size={11}
+                                className="opacity-0 transition-opacity duration-300 group-hover/chip:opacity-100"
+                              />
+                            </motion.button>
                           ))}
                         </motion.div>
                       </Reveal>

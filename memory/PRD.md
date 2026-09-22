@@ -22,15 +22,15 @@ Multi-page website for an India-based agro export business (RRAVI ORGANIC ENTERP
 - Hero background replaced (people in field → lush green crop rows, Unsplash photo-1625246333195).
 - Emails changed site-wide to sales@rraviorganicenterprises.net + info@rraviorganicenterprises.com (single source: CONTACT in catalog.js).
 - New custom SVG logo (components/Logo.jsx): terracotta→amber gradient circle, italic Fraunces "R" with sprouting leaves; used in navbar + footer.
+## Backlog
+- P1: Buyer auto-reply email ("we received your enquiry") via Resend.
+- P2: Certificate/compliance page, language switcher, blog/insights, SEO metadata per page.
+- P2: Enquiry status labels (new/contacted/closed) in the admin dashboard.
+
 - Motion pass: stronger Reveal (blur+scale+rise), page fade transitions (AnimatePresence), staggered product-chip reveals, global pill-button hover-lift/press, navbar slide-in, floating hero glow blobs, marquee pause-on-hover.
 
-## Backlog
-- P0: Email notification on new enquiry (Resend).
-- P1: Admin view for enquiries (currently GET /api/enquiries only).
-- P1: Per-product enquiry (not just per-category).
-- P2: Certificate/compliance page, language switcher, blog/insights, SEO metadata per page.
-
-## Next Tasks
-1. Wire Resend email alerts for enquiries.
-2. Simple password-protected enquiries dashboard.
-3. Product-level quote selection inside each category.
+## Updates (2026-09-22, second pass)
+- Email alerts: every enquiry POST sends a branded HTML notification to sales@rraviorganicenterprises.net via Emergent-managed Resend (guardrail gate enforced, non-blocking on failure). Verified: proxy returned 202.
+- Product-level quotes: every product chip on /products is now tappable — opens the quote drawer with category preselected and message pre-filled ("I'd like a quote for X (Category)…"). Verified in browser.
+- Enquiry dashboard at /admin: JWT auth (httpOnly cookies, access 15min + refresh 7d, bcrypt, 5-attempt/15min lockout, admin seeded from env), protected GET/DELETE /api/enquiries, CORS locked to FRONTEND_URL. Verified: login, 401 without auth, inbox list, delete.
+- Admin credentials: admin@rraviorganicenterprises.com / Rravi@2026Admin (see test_credentials.md).

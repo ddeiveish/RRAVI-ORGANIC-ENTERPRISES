@@ -115,6 +115,13 @@ export default function Footer() {
           <p className="text-xs text-mist">
             © {year} RRAVI ORGANIC ENTERPRISES · Sourced in India, delivered worldwide.
           </p>
+          <Link
+            data-testid="footer-admin-link"
+            to="/admin"
+            className="font-mono text-[11px] uppercase tracking-[0.25em] text-mist transition-colors hover:text-amber"
+          >
+            Admin
+          </Link>
           <button
             data-testid="back-to-top-btn"
             onClick={toTop}
