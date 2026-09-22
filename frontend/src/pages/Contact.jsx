@@ -18,7 +18,7 @@ export default function Contact() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg">
-              Form, phone or WhatsApp — whichever suits you. We reply within one business day.
+              Form, phone or WhatsApp - whichever suits you. We reply within one business day.
             </p>
           </Reveal>
         </div>

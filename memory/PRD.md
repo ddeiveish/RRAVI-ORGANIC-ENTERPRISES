@@ -34,3 +34,9 @@ Multi-page website for an India-based agro export business (RRAVI ORGANIC ENTERP
 - Product-level quotes: every product chip on /products is now tappable — opens the quote drawer with category preselected and message pre-filled ("I'd like a quote for X (Category)…"). Verified in browser.
 - Enquiry dashboard at /admin: JWT auth (httpOnly cookies, access 15min + refresh 7d, bcrypt, 5-attempt/15min lockout, admin seeded from env), protected GET/DELETE /api/enquiries, CORS locked to FRONTEND_URL. Verified: login, 401 without auth, inbox list, delete.
 - Admin credentials: admin@rraviorganicenterprises.com / Rravi@2026Admin (see test_credentials.md).
+
+## Update - 22 Sep 2026
+- Changed contact email `info@rraviorganicenterprises.com` -> `info@rraviorganicenterprises.net` (catalog.js CONTACT).
+- Polished custom scrollbar (brand forest thumb, terra hover accent, Firefox scrollbar-color support); Lenis smooth scroll already active.
+- Expanded Moringa Product Range > Powders into 6 varieties: Dried, Organic, USDA Certified Organic, EU Organic Certified, Herbal, Private Label Moringa Leaves Powder.
+- Replaced all em dashes (—) across frontend src with hyphens (-).

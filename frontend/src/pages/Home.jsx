@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <main data-testid="home-page">
-      {/* ————— HERO ————— */}
+      {/* ----- HERO ----- */}
       <section ref={heroRef} className="grain relative flex min-h-screen items-center overflow-hidden bg-forest-deep text-cream">
         <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
           <img
@@ -60,7 +60,7 @@ export default function Home() {
 
         <motion.div style={{ opacity: contentOpacity }} className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-24 pt-36 sm:px-8">
           <Reveal delay={0.05} y={20}>
-            <Eyebrow light>Agro · Herbal · Organic — Exports from India</Eyebrow>
+            <Eyebrow light>Agro · Herbal · Organic - Exports from India</Eyebrow>
           </Reveal>
           <h1 className="mt-6 font-display text-5xl font-medium leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl">
             <MaskedLine delay={0.15}>India's finest</MaskedLine>
@@ -71,7 +71,7 @@ export default function Home() {
           </h1>
           <Reveal delay={0.65} className="mt-8 max-w-xl">
             <p className="text-base leading-relaxed text-mist sm:text-lg">
-              Herbal extracts, cold-pressed oils, botanical powders and more — sourced from
+              Herbal extracts, cold-pressed oils, botanical powders and more - sourced from
               certified Indian growers and delivered to importers, distributors and businesses
               across the globe.
             </p>
@@ -107,7 +107,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* ————— MARQUEE ————— */}
+      {/* ----- MARQUEE ----- */}
       <Marquee
         items={MARQUEE_ITEMS}
         speed={70}
@@ -115,7 +115,7 @@ export default function Home() {
         textClassName="font-display text-xl sm:text-2xl italic"
       />
 
-      {/* ————— INTRO + STATS ————— */}
+      {/* ----- INTRO + STATS ----- */}
       <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-32">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
@@ -128,7 +128,7 @@ export default function Home() {
             <Reveal delay={0.15}>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-sage sm:text-lg">
                 We work with trusted, established and certified manufacturers and suppliers to
-                source products that meet the standards of our overseas buyers — with dependable
+                source products that meet the standards of our overseas buyers - with dependable
                 sourcing, consistent quality and clear communication throughout.
               </p>
             </Reveal>
@@ -158,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ————— MANIFESTO CHAPTERS ————— */}
+      {/* ----- MANIFESTO CHAPTERS ----- */}
       <section className="bg-sand/60 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <Reveal>
@@ -181,7 +181,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ————— CATEGORY BENTO ————— */}
+      {/* ----- CATEGORY BENTO ----- */}
       <section className="grain relative bg-forest py-24 text-cream sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
@@ -247,7 +247,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ————— IMAGE STATEMENT ————— */}
+      {/* ----- IMAGE STATEMENT ----- */}
       <section className="relative overflow-hidden">
         <img
           src={HERO_IMAGES.sorting}
@@ -259,13 +259,13 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center px-5">
           <Reveal>
             <p className="mx-auto max-w-3xl text-center font-display text-2xl font-medium leading-snug text-cream sm:text-3xl lg:text-4xl">
-              "Making sourcing from India <em className="italic text-amber">simple, reliable and transparent</em> — for every buyer we serve."
+              "Making sourcing from India <em className="italic text-amber">simple, reliable and transparent</em> - for every buyer we serve."
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* ————— CTA ————— */}
+      {/* ----- CTA ----- */}
       <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
           <div className="grain relative overflow-hidden rounded-[2.5rem] bg-forest px-6 py-16 text-center text-cream sm:px-12 sm:py-24">
@@ -274,7 +274,7 @@ export default function Home() {
               Tell us what you need. <em className="italic text-amber">We'll source it.</em>
             </h2>
             <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-mist sm:text-base">
-              Share your product list, grades and destination — we'll come back with pricing and
+              Share your product list, grades and destination - we'll come back with pricing and
               lead times within one business day.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-4">

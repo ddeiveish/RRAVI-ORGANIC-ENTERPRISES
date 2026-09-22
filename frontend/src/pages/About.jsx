@@ -12,7 +12,7 @@ const VALUES = [
   {
     icon: ShieldCheck,
     title: "Quality Without Compromise",
-    text: "Every product is sourced against the standards of our overseas buyers — and held to them.",
+    text: "Every product is sourced against the standards of our overseas buyers - and held to them.",
   },
   {
     icon: Handshake,
@@ -22,7 +22,7 @@ const VALUES = [
   {
     icon: Eye,
     title: "Radical Transparency",
-    text: "Clear communication throughout the buying process — from first quote to final delivery.",
+    text: "Clear communication throughout the buying process - from first quote to final delivery.",
   },
 ];
 
@@ -141,7 +141,7 @@ export default function About() {
                 </p>
                 <p className="mt-5 text-sm leading-relaxed text-mist sm:text-base">
                   One point of contact from your first enquiry to your final delivery. Reach out
-                  directly — no call centres, no runaround.
+                  directly - no call centres, no runaround.
                 </p>
               </div>
               <div className="space-y-3 text-sm">

@@ -49,7 +49,7 @@ export default function EnquiryForm({ idPrefix = "enquiry", defaultCategory = "G
     setSending(true);
     try {
       await axios.post(`${API}/enquiries`, form);
-      toast.success("Enquiry received — we'll get back to you within 24 hours.");
+      toast.success("Enquiry received - we'll get back to you within 24 hours.");
       setForm({ ...empty });
       onSuccess?.();
     } catch (err) {

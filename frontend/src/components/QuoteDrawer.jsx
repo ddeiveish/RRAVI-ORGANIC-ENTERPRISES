@@ -21,10 +21,10 @@ export default function QuoteDrawer({ open, category, product = "", onOpenChange
             </DialogTitle>
             <DialogDescription className="text-sm text-mist">
               {product
-                ? `Enquiring about: ${product} — ${category}`
+                ? `Enquiring about: ${product} - ${category}`
                 : category && category !== "General Enquiry"
                   ? `Enquiring about: ${category}`
-                  : "Tell us what you need — we reply within 24 hours."}
+                  : "Tell us what you need - we reply within 24 hours."}
             </DialogDescription>
           </DialogHeader>
         </div>

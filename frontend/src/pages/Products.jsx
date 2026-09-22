@@ -25,7 +25,7 @@ export default function Products() {
 
   return (
     <main data-testid="products-page">
-      {/* ————— HEADER ————— */}
+      {/* ----- HEADER ----- */}
       <section className="grain relative bg-forest-deep pb-20 pt-36 text-cream sm:pt-44">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <Reveal y={20}>
@@ -39,13 +39,13 @@ export default function Products() {
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg">
               Every category below ships with buyer-matched specifications, grades and packaging.
-              Don't see a product? Ask — our sourcing network goes well beyond this list.
+              Don't see a product? Ask - our sourcing network goes well beyond this list.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* ————— STICKY CATEGORY NAV ————— */}
+      {/* ----- STICKY CATEGORY NAV ----- */}
       <div className="glass-light sticky top-16 z-30 border-b border-forest/10 md:top-20">
         <div className="no-scrollbar mx-auto flex max-w-7xl gap-2 overflow-x-auto px-5 py-3 sm:px-8">
           {CATEGORIES.map((c) => (
@@ -62,7 +62,7 @@ export default function Products() {
         </div>
       </div>
 
-      {/* ————— CATEGORY SECTIONS ————— */}
+      {/* ----- CATEGORY SECTIONS ----- */}
       {CATEGORIES.map((c, i) => {
         const count = c.groups.reduce((s, g) => s + g.items.length, 0);
         const flip = i % 2 === 1;
@@ -150,7 +150,7 @@ export default function Products() {
                       onClick={() => openQuote(c.name)}
                       className="group mt-9 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-sm font-medium text-cream transition-colors duration-300 hover:bg-terra"
                     >
-                      Request Quote — {c.short}
+                      Request Quote - {c.short}
                       <ArrowUpRight size={15} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </button>
                   </Reveal>
@@ -161,7 +161,7 @@ export default function Products() {
         );
       })}
 
-      {/* ————— CLOSING NOTE ————— */}
+      {/* ----- CLOSING NOTE ----- */}
       <section className="grain bg-forest-deep py-20 text-center text-cream sm:py-28">
         <Reveal>
           <div className="mx-auto max-w-2xl px-5">

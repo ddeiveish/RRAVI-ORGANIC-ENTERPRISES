@@ -53,7 +53,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-mist">
-              Making sourcing from India simple, reliable and transparent — for importers,
+              Making sourcing from India simple, reliable and transparent - for importers,
               distributors and businesses worldwide.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-amber">Contact</h3>
             <ul className="space-y-3 text-sm text-cream/80">
-              <li className="text-cream">{CONTACT.person} — {CONTACT.location}</li>
+              <li className="text-cream">{CONTACT.person} - {CONTACT.location}</li>
               {CONTACT.phones.map((p) => (
                 <li key={p}>
                   <a data-testid={`footer-phone-${p.replace(/\s/g, "")}`} href={`tel:${p.replace(/\s/g, "")}`} className="flex items-center gap-2 transition-colors hover:text-amber">

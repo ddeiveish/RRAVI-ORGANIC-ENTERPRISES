@@ -258,7 +258,7 @@ export default function Admin() {
               data-testid="admin-empty-state"
               className="rounded-3xl border border-dashed border-forest/20 p-12 text-center text-sm text-sage"
             >
-              No enquiries yet — new submissions will appear here instantly.
+              No enquiries yet - new submissions will appear here instantly.
             </p>
           )}
         </div>

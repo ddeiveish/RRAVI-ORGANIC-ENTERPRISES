@@ -58,8 +58,13 @@ html.lenis body {
         background: #d96b27;
         color: #f9f6f0;
     }
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #0b2219 #ece6d8;
+    }
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 11px;
+        height: 11px;
     }
     ::-webkit-scrollbar-track {
         background: #ece6d8;
@@ -67,7 +72,11 @@ html.lenis body {
     ::-webkit-scrollbar-thumb {
         background: #0b2219;
         border-radius: 8px;
-        border: 2px solid #ece6d8;
+        border: 3px solid #ece6d8;
+        transition: background-color 0.3s ease;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #d96b27;
     }
 }
 

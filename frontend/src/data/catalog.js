@@ -1,7 +1,7 @@
 export const CONTACT = {
   person: "Ravi Dwivedi",
   phones: ["+91 7570055669", "+91 7570016699"],
-  emails: ["sales@rraviorganicenterprises.net", "info@rraviorganicenterprises.com"],
+  emails: ["sales@rraviorganicenterprises.net", "info@rraviorganicenterprises.net"],
   location: "Uttar Pradesh, India",
 };
 
@@ -199,11 +199,21 @@ export const CATEGORIES = [
     name: "Moringa Product Range",
     short: "Moringa",
     tagline:
-      "The miracle tree, whole-plant — EU/US certified premium organic grades available as per requirement.",
+      "The miracle tree, whole-plant - EU/US certified premium organic grades available as per requirement.",
     image:
       "https://images.pexels.com/photos/20527455/pexels-photo-20527455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     groups: [
-      { title: "Powders", items: ["Herbal — EU/US Certified Premium Organic (grades as per requirement)"] },
+      {
+        title: "Powders",
+        items: [
+          "Dried Moringa Leaves Powder",
+          "Organic Moringa Leaves Powder",
+          "USDA Certified Organic Moringa Leaves Powder",
+          "EU Organic Certified Moringa Leaves Powder",
+          "Herbal Moringa Leaves Powder",
+          "Private Label Moringa Leaves Powder",
+        ],
+      },
       { title: "Raw Products", items: ["Fresh Leaves", "Moringa Stem", "Roots", "Drumsticks", "Flower"] },
       { title: "Supplements", items: ["Capsules", "Tablets"] },
       { title: "Teas", items: ["Moringa Herbal Tea Chamomile", "Moringa Herbal Tea Tulsi"] },
@@ -221,7 +231,7 @@ export const MANIFESTO = [
   {
     num: "01",
     title: "Dependable Sourcing",
-    text: "We work only with trusted, established and certified manufacturers and suppliers across India — so every product we quote is one we can actually deliver.",
+    text: "We work only with trusted, established and certified manufacturers and suppliers across India - so every product we quote is one we can actually deliver.",
   },
   {
     num: "02",
@@ -231,7 +241,7 @@ export const MANIFESTO = [
   {
     num: "03",
     title: "Competitive Pricing",
-    text: "Direct relationships with growers and processors keep our pricing sharp — without cutting corners on grade or handling.",
+    text: "Direct relationships with growers and processors keep our pricing sharp - without cutting corners on grade or handling.",
   },
   {
     num: "04",

@@ -36,7 +36,7 @@ const PILLARS = [
   {
     icon: Layers,
     title: "Hundreds of Botanicals, One Partner",
-    text: "Eight product verticals under a single roof — consolidate your sourcing with us.",
+    text: "Eight product verticals under a single roof - consolidate your sourcing with us.",
   },
   {
     icon: Handshake,
@@ -90,7 +90,7 @@ export default function WhyUs() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg">
-              International buying is built on trust. Here's exactly how we earn it — and keep it.
+              International buying is built on trust. Here's exactly how we earn it - and keep it.
             </p>
           </Reveal>
         </div>
