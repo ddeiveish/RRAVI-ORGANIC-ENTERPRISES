@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Leaf, Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
+import Logo from "@/components/Logo";
 import { useQuote } from "@/context/QuoteContext";
 
 const LINKS = [
@@ -29,7 +30,10 @@ export default function Navbar() {
 
   return (
     <>
-      <header
+      <motion.header
+        initial={{ y: -72, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         data-testid="main-navbar"
         className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-500 glass-dark border-b border-cream/10 ${
           scrolled ? "shadow-[0_12px_40px_-16px_rgba(6,21,15,0.7)]" : ""
@@ -37,9 +41,7 @@ export default function Navbar() {
       >
         <div className="mx-auto flex h-16 md:h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
           <Link to="/" data-testid="nav-logo" className="group flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-terra text-cream transition-transform duration-500 group-hover:rotate-[20deg]">
-              <Leaf className="h-4.5 w-4.5" size={18} />
-            </span>
+            <Logo size={38} className="transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110" />
             <span className="leading-none">
               <span className="block font-display text-lg font-semibold tracking-wide text-cream">
                 RRAVI
@@ -97,7 +99,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-      </header>
+      </motion.header>
 
       <AnimatePresence>
         {open && (

@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { Reveal, Eyebrow } from "@/components/Reveal";
+import { Reveal, Eyebrow, EASE } from "@/components/Reveal";
+import { motion } from "framer-motion";
 import { CATEGORIES } from "@/data/catalog";
 import { useQuote } from "@/context/QuoteContext";
 
@@ -111,16 +112,26 @@ export default function Products() {
                         <h3 className="font-mono text-[11px] uppercase tracking-[0.24em] text-terra">
                           {g.title}
                         </h3>
-                        <div className="mt-3 flex flex-wrap gap-2">
+                        <motion.div
+                          className="mt-3 flex flex-wrap gap-2"
+                          initial="hidden"
+                          whileInView="show"
+                          viewport={{ once: true, margin: "-30px" }}
+                          variants={{ hidden: {}, show: { transition: { staggerChildren: 0.022 } } }}
+                        >
                           {g.items.map((item) => (
-                            <span
+                            <motion.span
                               key={item}
-                              className="rounded-full border border-forest/15 bg-white/60 px-3.5 py-1.5 text-[13px] text-ink transition-colors duration-300 hover:border-terra hover:text-terra"
+                              variants={{
+                                hidden: { opacity: 0, y: 14, scale: 0.9 },
+                                show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: EASE } },
+                              }}
+                              className="chip-press rounded-full border border-forest/15 bg-white/60 px-3.5 py-1.5 text-[13px] text-ink hover:border-terra hover:text-terra"
                             >
                               {item}
-                            </span>
+                            </motion.span>
                           ))}
-                        </div>
+                        </motion.div>
                       </Reveal>
                     ))}
                   </div>

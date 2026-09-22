@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Lenis from "lenis";
 import { Toaster } from "sonner";
+import { AnimatePresence, motion } from "framer-motion";
 import { QuoteContext } from "@/context/QuoteContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -14,7 +15,8 @@ import WhyUs from "@/pages/WhyUs";
 import Contact from "@/pages/Contact";
 
 function Shell() {
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const { pathname } = location;
   const [quote, setQuote] = useState({ open: false, category: "General Enquiry" });
   const openQuote = useCallback(
     (category = "General Enquiry") => setQuote({ open: true, category }),
@@ -46,13 +48,23 @@ function Shell() {
     <QuoteContext.Provider value={{ openQuote }}>
       <div className="min-h-screen bg-cream font-sans text-ink">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/why-us" element={<WhyUs />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={pathname}
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <Routes location={location}>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/why-us" element={<WhyUs />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </motion.div>
+        </AnimatePresence>
         <Footer />
         <QuoteDrawer
           open={quote.open}

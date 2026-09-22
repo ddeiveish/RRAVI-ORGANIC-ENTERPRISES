@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 export const EASE = [0.22, 1, 0.36, 1];
 
-export const Reveal = ({ children, delay = 0, y = 36, className = "" }) => (
+export const Reveal = ({ children, delay = 0, y = 48, className = "" }) => (
   <motion.div
     className={className}
-    initial={{ opacity: 0, y }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, margin: "-60px" }}
-    transition={{ duration: 0.9, delay, ease: EASE }}
+    initial={{ opacity: 0, y, scale: 0.985, filter: "blur(6px)" }}
+    whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+    viewport={{ once: true, margin: "-40px" }}
+    transition={{ duration: 1.05, delay, ease: EASE }}
   >
     {children}
   </motion.div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Leaf, Phone, Mail, MessageCircle, ArrowUp, ArrowUpRight } from "lucide-react";
+import { Phone, Mail, MessageCircle, ArrowUp, ArrowUpRight } from "lucide-react";
+import Logo from "@/components/Logo";
 import { CONTACT, CATEGORIES, waLink, DEFAULT_WA_MESSAGE } from "@/data/catalog";
 import { useQuote } from "@/context/QuoteContext";
 
@@ -43,9 +44,7 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="mb-4 flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-terra text-cream">
-                <Leaf size={18} />
-              </span>
+              <Logo size={38} />
               <span className="leading-none">
                 <span className="block font-display text-lg font-semibold tracking-wide">RRAVI</span>
                 <span className="block font-mono text-[9px] uppercase tracking-[0.28em] text-mist">

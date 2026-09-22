@@ -1,7 +1,7 @@
 export const CONTACT = {
   person: "Ravi Dwivedi",
   phones: ["+91 7570055669", "+91 7570016699"],
-  emails: ["ravie5702@gmail.com", "deiveishdiwaakardwivedi@gmail.com"],
+  emails: ["sales@rraviorganicenterprises.net", "info@rraviorganicenterprises.com"],
   location: "Uttar Pradesh, India",
 };
 
@@ -12,7 +12,7 @@ export const DEFAULT_WA_MESSAGE =
   "Hello RRAVI ORGANIC ENTERPRISES, I'm interested in sourcing botanical products from India. Please share your catalogue and pricing.";
 
 export const HERO_IMAGES = {
-  farm: "https://images.unsplash.com/photo-1708592190037-a1b08aacf4ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA5NzR8MHwxfHNlYXJjaHwzfHxvcmdhbmljJTIwZmFybSUyMGluZGlhJTIwaGFydmVzdCUyMGdyZWVuJTIwZmllbGQlMjBoZXJicyUyMGNhcmdvJTIwZXhwb3J0fGVufDB8fHx8MTc4OTkwOTI4OHww&ixlib=rb-4.1.0&q=85",
+  farm: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=85&w=1800&auto=format&fit=crop",
   sorting:
     "https://images.pexels.com/photos/20223766/pexels-photo-20223766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
 };

@@ -6,7 +6,7 @@ Multi-page website for an India-based agro export business (RRAVI ORGANIC ENTERP
 ## Architecture
 - Frontend: React 19 (CRA/craco), Tailwind, framer-motion (scroll reveals, masked hero reveal, parallax), lenis (smooth momentum scroll), react-router-dom v7, sonner toasts, shadcn/ui (dialog, input, select, textarea).
 - Backend: FastAPI + motor (MongoDB). Endpoints: GET /api/, POST /api/enquiries, GET /api/enquiries.
-- Data: full catalogue hardcoded in src/data/catalog.js (from user's business document). Contact: Ravi Dwivedi, +91 7570055669 / +91 7570016699, ravie5702@gmail.com / deiveishdiwaakardwivedi@gmail.com, WhatsApp wa.me/917570055669.
+- Data: full catalogue hardcoded in src/data/catalog.js (from user's business document). Contact: Ravi Dwivedi, +91 7570055669 / +91 7570016699, sales@rraviorganicenterprises.net / info@rraviorganicenterprises.com, WhatsApp wa.me/917570055669.
 
 ## User Personas
 - International importer/distributor browsing the catalogue and requesting quotes.
@@ -17,6 +17,12 @@ Multi-page website for an India-based agro export business (RRAVI ORGANIC ENTERP
 - Quote drawer pre-filled with the chosen category; enquiry form POSTs to backend, stored in MongoDB, sonner confirmation.
 - Design system: Fraunces display serif + Outfit body + JetBrains Mono labels; palette #0B2219 forest / #F9F6F0 cream / #D96B27 terracotta / #F49E4C amber; grain textures, glassmorphism navbar + badges.
 - Verified: API health/create/list via curl; home hero + bento, products quote drawer flow, contact form submit with toast, mobile menu — all via screenshots.
+
+## Updates (2026-09-22)
+- Hero background replaced (people in field → lush green crop rows, Unsplash photo-1625246333195).
+- Emails changed site-wide to sales@rraviorganicenterprises.net + info@rraviorganicenterprises.com (single source: CONTACT in catalog.js).
+- New custom SVG logo (components/Logo.jsx): terracotta→amber gradient circle, italic Fraunces "R" with sprouting leaves; used in navbar + footer.
+- Motion pass: stronger Reveal (blur+scale+rise), page fade transitions (AnimatePresence), staggered product-chip reveals, global pill-button hover-lift/press, navbar slide-in, floating hero glow blobs, marquee pause-on-hover.
 
 ## Backlog
 - P0: Email notification on new enquiry (Resend).

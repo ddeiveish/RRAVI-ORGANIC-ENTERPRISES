@@ -33,7 +33,7 @@ export default function Contact() {
                 href={waLink(DEFAULT_WA_MESSAGE)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-between rounded-3xl bg-terra p-7 text-cream transition-colors duration-300 hover:bg-forest"
+                className="group flex items-center justify-between rounded-3xl bg-terra p-7 text-cream transition-all duration-500 hover:-translate-y-1 hover:bg-forest hover:shadow-[0_20px_50px_-20px_rgba(217,107,39,0.5)]"
               >
                 <div>
                   <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-cream/70">

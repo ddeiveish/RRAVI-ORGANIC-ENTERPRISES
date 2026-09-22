@@ -45,6 +45,19 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-forest-deep/80 via-forest/55 to-forest-deep" />
         </motion.div>
 
+        <motion.div
+          aria-hidden
+          animate={{ y: [0, -18, 0] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          className="pointer-events-none absolute right-[12%] top-[22%] h-40 w-40 rounded-full bg-terra/25 blur-3xl"
+        />
+        <motion.div
+          aria-hidden
+          animate={{ y: [0, 16, 0] }}
+          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+          className="pointer-events-none absolute bottom-[18%] left-[6%] h-56 w-56 rounded-full bg-amber/15 blur-3xl"
+        />
+
         <motion.div style={{ opacity: contentOpacity }} className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-24 pt-36 sm:px-8">
           <Reveal delay={0.05} y={20}>
             <Eyebrow light>Agro · Herbal · Organic — Exports from India</Eyebrow>

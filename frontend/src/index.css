@@ -92,6 +92,42 @@ html.lenis body {
     backdrop-filter: blur(18px) saturate(140%);
 }
 
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+a[class*="rounded-full"],
+button[class*="rounded-full"] {
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        opacity 0.3s ease;
+}
+a[class*="rounded-full"]:hover,
+button[class*="rounded-full"]:hover {
+    transform: translateY(-2px);
+}
+a[class*="rounded-full"]:active,
+button[class*="rounded-full"]:active {
+    transform: scale(0.96);
+}
+
+.chip-press {
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.3s ease,
+        color 0.3s ease,
+        background-color 0.3s ease;
+}
+.chip-press:hover {
+    transform: translateY(-2px);
+}
+.chip-press:active {
+    transform: scale(0.94);
+}
+
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
