@@ -18,24 +18,24 @@ html.lenis body {
 
 @layer base {
     :root {
-        --background: 40 33% 96%;
+        --background: 90 25% 95%;
         --foreground: 156 19% 9%;
-        --card: 40 33% 98%;
+        --card: 90 25% 97%;
         --card-foreground: 156 19% 9%;
-        --popover: 40 33% 98%;
+        --popover: 90 25% 97%;
         --popover-foreground: 156 19% 9%;
         --primary: 24 70% 50%;
         --primary-foreground: 40 33% 96%;
-        --secondary: 38 30% 89%;
+        --secondary: 84 18% 88%;
         --secondary-foreground: 156 19% 9%;
-        --muted: 38 20% 90%;
+        --muted: 84 14% 90%;
         --muted-foreground: 150 10% 39%;
         --accent: 154 51% 9%;
         --accent-foreground: 40 33% 96%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 40 33% 96%;
-        --border: 40 15% 86%;
-        --input: 40 15% 80%;
+        --border: 88 14% 85%;
+        --input: 88 14% 80%;
         --ring: 24 70% 50%;
         --chart-1: 24 70% 50%;
         --chart-2: 154 51% 9%;
@@ -56,23 +56,23 @@ html.lenis body {
     }
     ::selection {
         background: #d96b27;
-        color: #f9f6f0;
+        color: #F2F6EC;
     }
     html {
         scrollbar-width: thin;
-        scrollbar-color: #0b2219 #ece6d8;
+        scrollbar-color: #0b2219 #E6EBD8;
     }
     ::-webkit-scrollbar {
         width: 11px;
         height: 11px;
     }
     ::-webkit-scrollbar-track {
-        background: #ece6d8;
+        background: #E6EBD8;
     }
     ::-webkit-scrollbar-thumb {
         background: #0b2219;
         border-radius: 8px;
-        border: 3px solid #ece6d8;
+        border: 3px solid #E6EBD8;
         transition: background-color 0.3s ease;
     }
     ::-webkit-scrollbar-thumb:hover {
@@ -96,7 +96,7 @@ html.lenis body {
 }
 
 .glass-light {
-    background: rgba(249, 246, 240, 0.86);
+    background: rgba(242, 246, 236, 0.86);
     -webkit-backdrop-filter: blur(18px) saturate(140%);
     backdrop-filter: blur(18px) saturate(140%);
 }

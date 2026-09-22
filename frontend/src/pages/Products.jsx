@@ -5,6 +5,21 @@ import { Reveal, Eyebrow, EASE } from "@/components/Reveal";
 import { motion } from "framer-motion";
 import { CATEGORIES } from "@/data/catalog";
 import { useQuote } from "@/context/QuoteContext";
+import { useSeo } from "@/hooks/useSeo";
+
+const CATEGORY_ITEMLIST = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "RRAVI ORGANIC ENTERPRISES - Product Catalogue",
+  itemListElement: CATEGORIES.map((c, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: c.name,
+    description: c.tagline,
+    image: c.image,
+    url: `https://www.rraviorganicenterprises.net/products#${c.id}`,
+  })),
+};
 
 const scrollToId = (id) => {
   const el = document.getElementById(id);
@@ -14,6 +29,13 @@ const scrollToId = (id) => {
 };
 
 export default function Products() {
+  useSeo({
+    title: "Product Catalogue - 8 Botanical Verticals",
+    description:
+      "Explore our export catalogue: herbal extracts, premium herbal powders, therapeutic oils, dehydrated fruit powders, vegetable & root powders, seeds & flowers, bark powders and organic moringa - grades and packaging matched to your market.",
+    path: "/products",
+    jsonLd: CATEGORY_ITEMLIST,
+  });
   const { openQuote } = useQuote();
   const location = useLocation();
 

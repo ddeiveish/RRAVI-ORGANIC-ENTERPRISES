@@ -14,6 +14,15 @@ import {
   DEFAULT_WA_MESSAGE,
 } from "@/data/catalog";
 import { useQuote } from "@/context/QuoteContext";
+import { useSeo } from "@/hooks/useSeo";
+
+const WEBSITE_LD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "RRAVI ORGANIC ENTERPRISES",
+  url: "https://www.rraviorganicenterprises.net/",
+  about: "Agro, herbal, organic and natural product exports from India.",
+};
 
 const STATS = [
   { value: "08", label: "Product Verticals" },
@@ -23,6 +32,13 @@ const STATS = [
 ];
 
 export default function Home() {
+  useSeo({
+    title: "",
+    description:
+      "India-based export house for agro, herbal, organic and natural products - herbal extracts, botanical powders, therapeutic oils and premium organic moringa, shipped worldwide.",
+    path: "/",
+    jsonLd: WEBSITE_LD,
+  });
   const { openQuote } = useQuote();
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({

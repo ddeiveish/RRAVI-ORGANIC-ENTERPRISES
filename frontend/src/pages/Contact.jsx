@@ -2,8 +2,15 @@ import { Phone, Mail, MessageCircle, MapPin, Clock } from "lucide-react";
 import { Reveal, Eyebrow } from "@/components/Reveal";
 import EnquiryForm from "@/components/EnquiryForm";
 import { CONTACT, waLink, DEFAULT_WA_MESSAGE } from "@/data/catalog";
+import { useSeo } from "@/hooks/useSeo";
 
 export default function Contact() {
+  useSeo({
+    title: "Contact & Request a Quote",
+    description:
+      "Request a quote or reach RRAVI ORGANIC ENTERPRISES by enquiry form, phone or WhatsApp. Share your product list, grades and destination - we reply within one business day.",
+    path: "/contact",
+  });
   return (
     <main data-testid="contact-page">
       <section className="grain relative bg-forest-deep pb-20 pt-36 text-cream sm:pt-44">

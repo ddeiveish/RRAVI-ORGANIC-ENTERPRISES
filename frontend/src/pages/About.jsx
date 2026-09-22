@@ -1,7 +1,14 @@
 import { Sprout, ShieldCheck, Handshake, Eye, Phone, Mail, MessageCircle } from "lucide-react";
 import { Reveal, Eyebrow } from "@/components/Reveal";
-import { CONTACT, HERO_IMAGES, waLink, DEFAULT_WA_MESSAGE } from "@/data/catalog";
+import { CONTACT, HERO_IMAGES, TOTAL_PRODUCTS, waLink, DEFAULT_WA_MESSAGE } from "@/data/catalog";
 import { useQuote } from "@/context/QuoteContext";
+import { useSeo } from "@/hooks/useSeo";
+
+const FACTS = [
+  { value: `${TOTAL_PRODUCTS}+`, label: "Botanicals catalogued" },
+  { value: "08", label: "Product verticals" },
+  { value: "Global", label: "Export reach" },
+];
 
 const VALUES = [
   {
@@ -27,6 +34,12 @@ const VALUES = [
 ];
 
 export default function About() {
+  useSeo({
+    title: "About Us",
+    description:
+      "RRAVI ORGANIC ENTERPRISES is an India-based export and sourcing house built on dependable sourcing, consistent quality and clear communication - trusted by importers and distributors worldwide.",
+    path: "/about",
+  });
   const { openQuote } = useQuote();
 
   return (
@@ -71,6 +84,24 @@ export default function About() {
                   businesses worldwide by making sourcing from India simple, reliable and
                   transparent.
                 </p>
+                <p>
+                  From the first enquiry to the final shipment, we stay on the details that matter
+                  to overseas buyers - sample dispatch, specification sheets, export documentation
+                  and packaging built for long-haul freight. And if a product isn't already in our
+                  catalogue, our sourcing network can usually track it down.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.16}>
+              <div className="mt-8 grid grid-cols-3 gap-4 border-t border-forest/10 pt-8">
+                {FACTS.map((f) => (
+                  <div key={f.label} data-testid={`about-fact-${f.label.split(" ")[0].toLowerCase()}`}>
+                    <div className="font-display text-2xl font-medium text-forest sm:text-3xl">
+                      {f.value}
+                    </div>
+                    <div className="mt-1 text-xs leading-snug text-sage sm:text-sm">{f.label}</div>
+                  </div>
+                ))}
               </div>
             </Reveal>
             <Reveal delay={0.2}>

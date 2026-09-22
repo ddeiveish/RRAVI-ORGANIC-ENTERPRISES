@@ -40,3 +40,10 @@ Multi-page website for an India-based agro export business (RRAVI ORGANIC ENTERP
 - Polished custom scrollbar (brand forest thumb, terra hover accent, Firefox scrollbar-color support); Lenis smooth scroll already active.
 - Expanded Moringa Product Range > Powders into 6 varieties: Dried, Organic, USDA Certified Organic, EU Organic Certified, Herbal, Private Label Moringa Leaves Powder.
 - Replaced all em dashes (—) across frontend src with hyphens (-).
+
+## Update 2 - 22 Sep 2026
+- SEO: rewrote index.html <head> with full Open Graph + Twitter card + robots/keywords/canonical + JSON-LD Organization; OG image = provided Cloudinary asset (1600x750, jpg) for WhatsApp/iMessage/Android/Google previews.
+- SEO: added dependency-free useSeo hook (src/hooks/useSeo.js) for per-route title/description/canonical/OG + injected JSON-LD. Wired into Home (WebSite), Products (ItemList of 8 categories), About, WhyUs, Contact.
+- NOTE: canonical/og:url default to https://www.rraviorganicenterprises.net/ (assumed production domain) - update if the live domain differs.
+- About: added a 4th genuine story paragraph + a 3-stat strip (botanicals catalogued / verticals / export reach).
+- Theme: shifted cream/sand + shadcn CSS vars to a subtle greenish hue (cream #F2F6EC, sand #E6EBD8); scrollbar/selection/glass updated to match.

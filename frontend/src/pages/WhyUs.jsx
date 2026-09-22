@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Reveal, Eyebrow } from "@/components/Reveal";
 import { useQuote } from "@/context/QuoteContext";
+import { useSeo } from "@/hooks/useSeo";
 
 const PILLARS = [
   {
@@ -74,6 +75,12 @@ const COMPARISON = [
 ];
 
 export default function WhyUs() {
+  useSeo({
+    title: "Why Choose Us",
+    description:
+      "A certified partner network, consistent quality, competitive pricing and one clear point of contact - the reasons importers and distributors source from RRAVI ORGANIC ENTERPRISES.",
+    path: "/why-us",
+  });
   const { openQuote } = useQuote();
 
   return (
