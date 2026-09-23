@@ -20,7 +20,7 @@ const WEBSITE_LD = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "RRAVI ORGANIC ENTERPRISES",
-  url: "https://www.rraviorganicenterprises.net/",
+  url: "https://www.rraviorganicenterprises.com/",
   about: "Agro, herbal, organic and natural product exports from India.",
 };
 

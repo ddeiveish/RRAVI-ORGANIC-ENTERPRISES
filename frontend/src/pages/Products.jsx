@@ -17,7 +17,7 @@ const CATEGORY_ITEMLIST = {
     name: c.name,
     description: c.tagline,
     image: c.image,
-    url: `https://www.rraviorganicenterprises.net/products#${c.id}`,
+    url: `https://www.rraviorganicenterprises.com/products#${c.id}`,
   })),
 };
 

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://www.rraviorganicenterprises.net/sitemap.xml
+Sitemap: https://www.rraviorganicenterprises.com/sitemap.xml
